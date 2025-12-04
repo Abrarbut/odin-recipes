@@ -1,18 +1,9 @@
-div {
-    background-color: red;
-    color: white;
-    font-size: 34px;
-    font-weight: bold;
-    text-align: center;
+
+.one {
+    height: auto;
+    width: 300px;
 }
-p {
-    background-color: green;
-    color: white;
-    font-size: 22px;
-    
-}
-button {
-    background-color:orange;
-    border-color: gray;
-    font-weight: bold;
+.second {
+    height: 400px;
+    width: 200px;
 }
