@@ -1,0 +1,25 @@
+body {
+    background: #eee;
+  font-family: sans-serif;
+    padding: 50px;
+    gap: 20px; /* space between boxes */
+    width: 80%;
+    margin: auto;
+    margin-block: 10px;
+    
+}
+.main {
+    background-color: rgb(17, 21, 26);
+    padding: 10px;
+}
+.one, .two, .three {
+    padding: 20px;
+    margin-block: 10px;
+    background-color: rgb(122, 93, 93);
+    text-align: center;
+    border: 2px solid #0d0d0d;
+}
+.button {
+  background: white;
+  border: 1px solid #eee;
+}
