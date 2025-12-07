@@ -1,0 +1,20 @@
+.main {
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c18282;
+    font-family: cursive;
+
+}
+.main-heading {
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.main-links a{
+    color: white;
+    text-decoration: solid;
+    padding: 10px;
+    text-shadow: 1px 1px 2px black;
+
+}
