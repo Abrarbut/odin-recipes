@@ -20,6 +20,6 @@ describe('Fibonacci Test', () => {
         expect(fibonacci(6)).toEqual(8);
     });
     test('should return the nth Fibonacci number', () => {
-        expect(fibonacci(25)).toEqual(75025);
+        expect(fibonacci("25")).toEqual(75025);
     });
 });
