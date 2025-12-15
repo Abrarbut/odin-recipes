@@ -1,2 +1,3 @@
 const sum = 2 + 2
-module.exports = sum
+const diff = 10 - 4
+module.exports = { sum, diff }
