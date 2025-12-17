@@ -12,3 +12,8 @@ function capitalize(str) {
     return str[0].toUpperCase() + str.slice(1).toLowerCase();
 }
 alert(capitalize("heLLLlo"));
+
+function lastLetter(str) {
+    return str[str.length - 1];
+}   
+alert(lastLetter("hello"));
