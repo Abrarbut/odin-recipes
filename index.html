@@ -29,10 +29,10 @@
 
 
     <script>
-        const container = document.querySelector('#container');
-        const display = container.firstElementChild;
-        console.log(display);  // <div class="display"></div>
-        
+        const username = "Bro"  ;
+        const welcomemsg = document.getElementById("welcome-message");
+
+        welcomemsg.textContent += username === "" ? `Guest!` : username;
     </script>
 </body>
 
