@@ -1,32 +1,12 @@
-const contains = require('./contains.js');
-
-describe('Contains Test', () => {
-    const meaningOfLifeArray = [42];
-    const object = {
-        a: 1,
-        b: {
-            c: 2,
-            d: 3,
-            e: {
-                f: 4,
-                g: {
-                    h: {
-                        i: 5
-                    }
-                }
-            }
-        }
-    };
-    test("false if no matching object reference", () => {
-        expect(contains(object, [42])).toBe(false);
+const totalIntegers = require('./contains.js');
+describe('Interger count', () => {
+    test('should return the total number of integers in the array', () => {
+        expect(totalIntegers([1, '2', 3, 4, 'five'])).toEqual(3);
     });
-    test("true if the provided string is a value within the object", () => {
-        expect(contains(object, "foo")).toBe(false);
-    });
-    test("true if the provided string is a value within the object", () => {
-        expect(contains(object, 5)).toBe(true);
-    });
-    test("true if the provided string is a value within the object", () => {
-        expect(contains(object, 44645)).toBe(false);
+    test('Works with negative numbers', () => {
+    expect(totalIntegers([5, 7, -7, [45, -1, -0], [4, 7, -4, -4, -4, [777777, -45674]], [-5477654]])).toEqual(14);
+  });
+    test('should return the total number of integers in the array', () => {
+        expect(totalIntegers(['five'])).toEqual(0);
     });
 });

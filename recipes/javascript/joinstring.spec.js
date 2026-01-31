@@ -1,12 +1,13 @@
-const { firstname, lastname, thisyear, birthyear } = require('./joinstring')
-const age = thisyear - birthyear
-const fullname = `${firstname} ${lastname}`
+const values = require('./joinstring')
 
 describe('Join Strings Test', () => {
     test('should return the correct full name', () => {
-        expect(fullname)
+        expect(values.fullname).toBe("Abrar Butt")
     })
     test('should return the correct age', () => {
-        expect(age)
+        expect(values.age).toEqual(values.thisyear - values.birthyear)    
+    })
+    test('greeting', () => {
+        expect(values.greeting).toEqual("Hello! My name is Abrar Butt and I am 21 years old.")  
     })
 });

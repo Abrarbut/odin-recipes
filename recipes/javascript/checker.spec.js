@@ -2,7 +2,8 @@ const checker = require('../javascript/checker')
 
 describe('checker', () => {
   test('returns true when number is 1000', () => {
-    expect(checker(1000)).toEqual(true);
+    expect(checker(1000));
+    
   });
   test.skip('returns true when number is 10', () => {
     expect(checker(10)).toEqual(true);

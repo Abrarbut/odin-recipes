@@ -1,1 +1,3 @@
-let age = 30;
+ const playground = document.querySelector(' ');
+
+        playground.append('wizard', 'crystal balls');
